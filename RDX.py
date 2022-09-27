@@ -114,7 +114,7 @@ def uaku2():
             ugen.append(ub)
     except:
         a=requests.get('https://github.com/TobiPHcheat/F-7/blob/main/approved.txt').text
-		ua=open('.bbnew.txt','w')
+		ua=open('.bbnew.txt','r')
 		aa=re.findall('line">(.*?)<',str(a))
 		for un in aa:
 			ua.write(un+'\n')
